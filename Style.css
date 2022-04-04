@@ -48,13 +48,13 @@ body {
   background-color: hsl(235, 46%, 20%);
 }
 .list {
-  color: aliceblue;
+  color: #aaa;
   list-style: none;
   font-size: x-small;
 }
 .daily {
   padding-bottom: 20px;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 .week {
   padding-bottom: 20px;
@@ -123,4 +123,10 @@ h3 {
   background-color: hsl(43, 84%, 65%);
   height: 60px;
   border-radius: 10px;
+}
+.listed {
+  cursor: pointer;
+}
+.active {
+  color: #fff;
 }

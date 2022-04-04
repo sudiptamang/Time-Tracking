@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Time Tracker</title>
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
@@ -16,21 +16,24 @@
           <p class="Robson">Jeremy Robson</p>
         </div>
         <ul class="list">
-          <li class="daily">Daily</li>
-          <li class="week">Weekly</li>
-          <li class="daily">Monthly</li>
+          <div class="listed">
+            <li class="daily" id="daily_option">Daily</li>
+            <li class="week active" id="weekly_option">Weekly</li>
+            <li class="daily" id="monthly_option">Monthly</li>
+          </div>
         </ul>
       </div>
       <div class="grid-item grid-item-2">
         <img src="icon-work.svg" class="icon" />
         <div class="Work">
           <div class="workupdate">
-            <h3>Work</h3>
+            <h3 id="topic1">Work</h3>
+
             <img src="icon-ellipsis.svg" class="fullstop" />
           </div>
 
-          <h1 class="hours">32hrs</h1>
-          <p class="last">Last Week-36hrs</p>
+          <h1 class="hours" id="hours_32"></h1>
+          <p class="last" id="lastWeek"></p>
         </div>
       </div>
       <div class="grid-item grid-item-3">
@@ -40,8 +43,8 @@
             <h3>Play</h3>
             <img src="icon-ellipsis.svg" class="fullstop" />
           </div>
-          <h1 class="hours">10hrs</h1>
-          <p class="last">Last Week-8hrs</p>
+          <h1 class="hours" id="play"></h1>
+          <p class="last" id="playweek"></p>
         </div>
       </div>
       <div class="grid-item grid-item-4">
@@ -51,8 +54,8 @@
             <h3>Study</h3>
             <img src="icon-ellipsis.svg" class="fullstop" />
           </div>
-          <h1 class="hours">4hrs</h1>
-          <p class="last">Last Week-7hrs</p>
+          <h1 class="hours" id="Study"></h1>
+          <p class="last" id="Lastweek"></p>
         </div>
       </div>
       <div class="grid-item grid-item-5">
@@ -62,8 +65,8 @@
             <h3>Exercise</h3>
             <img src="icon-ellipsis.svg" class="fullstop" />
           </div>
-          <h1 class="hours">4hrs</h1>
-          <p class="last">Last Week-5hrs</p>
+          <h1 class="hours" id="Exercise"></h1>
+          <p class="last" id="Exerciseweek"></p>
         </div>
       </div>
       <div class="grid-item grid-item-6">
@@ -73,8 +76,8 @@
             <h3>Social</h3>
             <img src="icon-ellipsis.svg" class="fullstop" />
           </div>
-          <h1 class="hours">5hrs</h1>
-          <p class="last">Last Week-10hrs</p>
+          <h1 class="hours" id="Social"></h1>
+          <p class="last" id="SocialWeek"></p>
         </div>
       </div>
       <div class="grid-item grid-item-7">
@@ -84,10 +87,13 @@
             <h3>Self Care</h3>
             <img src="icon-ellipsis.svg" class="fullstop" />
           </div>
-          <h1 class="hours">2hrs</h1>
-          <p class="last">Last Week-2hrs</p>
+          <h1 class="hours" id="Selfcare"></h1>
+          <p class="last" id="Selfcareweek"></p>
         </div>
       </div>
     </div>
+
+    <div id="container"></div>
+    <script src="main.js"></script>
   </body>
 </html>
